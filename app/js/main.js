@@ -9,3 +9,10 @@ $('.slider').slick({
     slidesToScroll: 1,
     centerMode: true
 });
+
+$('.hero__slider').slick({
+    arrows: false,
+    variableWidth: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+});

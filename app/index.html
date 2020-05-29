@@ -11,19 +11,76 @@
 
 <body>
     <header class="header">
-        <div class="content">
-            <div class="nav">
-                <div class="nav__logo"><img src="./img/logo.png" alt=""></div>
-                <div class="nav__menu">
-                    <a href="#" class="nav__menu-item">I’m a Landlord</a>
-                    <a href="#" class="nav__menu-item">I’m a Tenant</a>
-                    <a href="#" class="nav__menu-item">Search Rentals</a>
-                    <a href="#" class="nav__menu-btn">Contact Us</a>
+        <div class="nav">
+            <div class="content">
+                <div class="nav__box">
+                    <div class="nav__logo"><img src="./img/logo.png" alt=""></div>
+                    <div class="nav__menu">
+                        <a href="#" class="nav__menu-item">I’m a Landlord</a>
+                        <a href="#" class="nav__menu-item">I’m a Tenant</a>
+                        <a href="#" class="nav__menu-item">Search Rentals</a>
+                        <a href="#" class="nav__menu-btn">Contact Us</a>
+                    </div>
+                    <!-- /.nav__menu -->
                 </div>
-                <!-- /.nav__menu -->
             </div>
+            <!-- /.nav -->
         </div>
-        <!-- /.nav -->
+
+        <div class="hero">
+            <div class="hero__box content">
+                <h1 class="hero__title">
+                    Need to Rent a House?
+                </h1>
+                <p class="hero__description">
+                    We'll help you find your next home.
+                </p>
+                
+            </div>
+            <div class="hero__slider">
+                <div class="hero__slider-item">
+                    <img src="./img/slider-1.png" alt="">
+                </div>
+                <div class="hero__slider-item">
+                    <img src="./img/slider-2.png" alt="">
+                </div>
+            </div>
+            <div class="hero__form content">
+                <h4 class="hero__form-title">For Current rent estimate, please provide the following :</h4>
+                <form action="">
+                    <div class="hero__form-inputs">
+                        <label for="" class="hero__form-label hero__form-adress">Address *
+                            <span class="hero__form-span"></span>
+                            <input type="text" name="" id="" placeholder="hello">
+                        </label>
+                        <label for="" class="hero__form-label hero__form-unit">Unit
+                            <span class="hero__form-span"></span>
+                            <input type="text" name="" id="" placeholder="hello">
+                        </label>
+                        <label for="" class="hero__form-label hero__form-type">Property Type
+                            <span class="hero__form-span"></span>
+                            <input type="text" name="" id="" placeholder="hello">
+                        </label>
+                        <label for="" class="hero__form-label hero__form-sqft">SQFT
+                            <span class="hero__form-span"></span>
+                            <input type="text" name="" id="" placeholder="hello">
+                        </label>
+                        <label for="" class="hero__form-label hero__form-beds">Beds
+                            <span class="hero__form-span"></span>
+                            <input type="text" name="" id="" placeholder="hello">
+                        </label>
+                        <label for="" class="hero__form-label hero__form-bath">Bath
+                            <span class="hero__form-span"></span>
+                            <input type="text" name="" id="" placeholder="hello">
+                        </label>
+                    </div>
+                    <div class="hero__form-btn">
+                        <button class="btn">Submit</button>
+                    </div>
+                </form>
+            </div>
+            
+        </div>
     </header>
     <!-- /.header -->
 
@@ -98,7 +155,7 @@
         <p class="description">WE KEEP IT SIMPLE</p>
         <div class="content">
             <div class="services__box">
-                <div class="services__box-item">
+                <div class="services__box-item services__box-item__left">
                     <h3 class="services__box-title">RENT-UP SERVICE</h3>
                     <span class="services__box-description">We take the hassle out of finding your next tenant</span>
                     <div class="services__box-text">Everything from marketing your property to moving in your tenant is

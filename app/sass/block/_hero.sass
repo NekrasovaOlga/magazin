@@ -1,0 +1,125 @@
+.hero
+    position: relative
+    display: flex
+    justify-content: space-between
+    height: calc(100vh - 80px)
+    &__box
+        max-width: 542px
+        width: 100%
+        font-size: 20px
+        margin-top: 5%
+    &__title
+        font-size: 50px
+    &__slider
+        max-width: 746px
+        width: 100%
+        overflow: hidden
+        &-item
+            margin-right: 25px
+            max-width: 656px
+            width: 100%
+            img
+                width: 100%
+    
+    &__form
+        position: absolute
+        bottom: 5%
+        max-width: 900px
+        width: 100%
+        background: #FFFFFF
+        padding: 30px 42px 0 40px
+        box-shadow: 0px 2px 40px rgba(0, 0, 0, 0.1)
+        border-radius: 4px
+        margin-left: 30px
+        &::before
+            position: absolute
+            content: ''
+            background: url(../img/service__bg-1.svg)
+            width: 172px
+            height: 172px
+            z-index: -1
+            bottom: -86px
+            left: -69px
+        &::after
+            position: absolute
+            content: ''
+            background: url(../img/service__bg-2.svg)
+            top: -17px
+            right: -17px
+            width: 80px
+            height: 80px
+            z-index: 1
+        form
+            display: flex
+            justify-content: space-between
+            margin-top: 15px
+            flex-wrap: wrap
+            align-items: flex-end
+        &-label
+            position: relative
+            display: flex
+            flex-direction: column
+            margin-bottom: 25px
+            input
+                margin-top: 10px
+                height: 45px
+                background: #E7E7E7
+                border-radius: 2px
+                border: none
+                outline: none
+                padding: 5px 45px
+                position: relative
+                width: 130px
+        &-span
+            position: absolute
+            width: 45px
+            height: 45px
+            z-index: 5
+            bottom: 0
+            &::after
+                position: absolute
+                content: ''
+                top: 50%
+                left: 50%
+                transform: translate(-50%, -50%)
+                width: 24px
+                height: 24px
+                
+        &-adress
+            input
+                width: 475px
+            span
+                &::after
+                    background: url(../img/location.svg)
+        &-unit
+            input
+                width: 140px
+        &-sqft
+            span
+                &::after
+                    background: url(../img/print.svg)   
+        &-beds
+            span
+                &::after
+                    background: url(../img/ic-seat.svg)   
+        &-bath
+            span
+                &::after
+                    background: url(../img/ic-bathrum.svg)   
+        &-type
+            input
+                width: 178px
+            span
+                &::after
+                    background: url(../img/ic-home.svg)       
+        &-inputs
+            max-width: 638px
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-between
+        &-btn
+            button
+                outline: none
+                border: none
+                width: 140px
+                margin-bottom: 25px

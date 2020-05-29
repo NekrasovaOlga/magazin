@@ -1,5 +1,8 @@
 .services
     position: relative
+    overflow: hidden
+    padding-bottom: 63px
+    margin-top: 95px
     &__box
         display: flex
         flex-direction: column
@@ -19,6 +22,14 @@
                 align-items: flex-end
                 text-align: right
                 margin-bottom: 29px
+                &::after
+                    position: absolute
+                    content: ''
+                    background: url(../img/service__bg-2.svg)
+                    width: 80px
+                    height: 80px
+                    right: -38px
+                    top: -26px
         &-title
             font-size: 35px
             line-height: 45px
@@ -39,9 +50,27 @@
             max-width: 145px
     &__img
         position: absolute
+        &::before
+            position: absolute
+            content: ''
+            background: url(../img/service__bg-1.svg)
+            width: 172px
+            height: 172px
+            z-index: -1
+        
         &-left
             top: 0
             right: 0
+            &::before
+                top: -89px
+                right: -69px
+            
         &-right
             bottom: 0
             left: 0
+            &::before
+                bottom: -63px
+                left: -73px
+            &::after
+                bottom: -37px
+                left: -49px
