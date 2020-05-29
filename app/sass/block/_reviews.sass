@@ -1,15 +1,44 @@
 .reviews
     margin-top: 60px
     position: relative
+    &::after
+        position: absolute
+        content: '“'
+        top: 0
+        left: 0
+        font-size: 500px
+        width: 248px
+        height: 248px
+        z-index: 0
+        color: rgba(0, 0, 0, 0.05)
     &__box
-        margin-top: 60px
+        width: 1097px
+        position: relative
+        margin: 60px auto
         &-item
             display: flex
             align-items: center
-            justify-content: center
+            width: 1097px
+        &-img
+            position: relative
+            z-index: 4
+            padding-right: 60px
+            padding-bottom: 35px
+            img
+                width: 100%
+                max-width: 560px
+            &::after
+                position: absolute
+                content: ''
+                background: url(../img/reviews-bg.svg)
+                width: 110px
+                height: 110px
+                bottom: 0
+                right: 0
+                background-repeat: no-repeat
+                z-index: -1
         &-list
             max-width: 477px
-            margin-left: 60px
         &-title
             font-size: 30px
             line-height: 38px
@@ -22,4 +51,3 @@
         &-home
             font-size: 12px
             line-height: 15px
-            
