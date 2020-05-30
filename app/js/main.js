@@ -1,4 +1,14 @@
 
+btnNav = document.querySelector('.nav__burger')
+menuOpen = document.querySelector('.nav__menu')
+
+btnNav.addEventListener('click', openMenu)
+
+function openMenu(){
+    menuOpen.classList.toggle('nav__menu-active')
+    btnNav.classList.toggle('nav__burger-active')
+}
+
 $('.reviews__box').slick({
     arrows: false,
     autoplay: true,
