@@ -11,7 +11,9 @@ body
     margin: 0 auto
     overflow: hidden
 .btn
+    overflow: hidden
     background: $orange
+    max-width: 145px
     min-height: 45px
     width: 100%
     color: #ffffff
@@ -61,3 +63,7 @@ a
     .content
         max-width: 96%
         margin: 0 2%
+
+@media screen and ( max-width: 637px ) and (min-width: 0)
+    .title
+        font-size: 1.2em

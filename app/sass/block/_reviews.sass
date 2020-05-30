@@ -15,10 +15,13 @@
         width: 1097px
         position: relative
         margin: 60px auto
+    
         &-item
             display: flex
             align-items: center
-            width: 1097px
+            justify-content: space-between
+            width: 100%
+            margin: 0 auto
         &-img
             position: relative
             z-index: 4
@@ -51,3 +54,46 @@
         &-home
             font-size: 12px
             line-height: 15px
+
+
+@media screen and ( max-width: 1260px ) and (min-width: 960px)
+    .reviews
+        &__box
+            max-width: 900px
+            
+@media screen and ( max-width: 959px ) and (min-width: 835px)
+    .reviews
+        &__box
+            max-width: 800px
+            &-img
+                padding-right: 30px
+                img
+                    max-width: 500px
+@media screen and ( max-width: 834px ) and (min-width: 638px)
+    .reviews
+        &__box
+            max-width: 600px
+            &-img
+                padding-right: 30px
+                img
+                    max-width: 500px
+                &::after
+                    display: none
+            &-text
+                font-size: 1em
+@media screen and ( max-width: 637px ) and (min-width: 0)
+    .reviews
+        &::after
+            display: none
+        &__box
+            max-width: 100%
+            &-item
+                flex-direction: column
+            &-img
+                padding-right: 0
+                img
+                    max-width: 500px
+                &::after
+                    display: none
+            &-text
+                font-size: 1em
