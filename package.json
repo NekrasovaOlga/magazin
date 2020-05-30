@@ -18,7 +18,10 @@
     "normalize.css": "^8.0.1"
   },
   "dependencies": {
+    "animate-on-scroll": "^1.2.5",
+    "animate.css": "^4.1.0",
     "magnific-popup": "^1.1.0",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "wow.js": "^1.2.2"
   }
 }

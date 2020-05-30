@@ -7,16 +7,19 @@
         display: flex
         flex-direction: column
         position: relative
-        &-item
+        &-list
             max-width: 940px
             width: 100%
             background: #eeeeee
+            height: 530px
             border-radius: 4px
             padding: 150px 100px
-            margin-top: 50px
-            margin-bottom: 5px
             display: flex
             flex-direction: column
+        &-item
+            position: relative
+            margin-top: 50px
+            margin-bottom: 5px
             &__right
                 margin-left: 320px
                 align-items: flex-end
@@ -30,6 +33,15 @@
                     height: 80px
                     right: -38px
                     top: -26px
+            &__left
+                &::after
+                    position: absolute
+                    content: ''
+                    background: url(../img/service__bg-2.svg)
+                    width: 80px
+                    height: 80px
+                    left: -38px
+                    bottom: -26px
         &-title
             font-size: 35px
             line-height: 45px
@@ -59,14 +71,14 @@
             z-index: -1
         
         &-left
-            top: 0
+            top: -50px
             right: 0
             &::before
                 top: -89px
                 right: -69px
             
         &-right
-            bottom: 0
+            bottom: -29px
             left: 0
             &::before
                 bottom: -63px

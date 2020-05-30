@@ -1,5 +1,8 @@
+
 $('.reviews__box').slick({
     arrows: false,
+    autoplay: true,
+    autoplaySpeed: 5000,
 });
 
 $('.slider').slick({
@@ -7,7 +10,9 @@ $('.slider').slick({
     variableWidth: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-    centerMode: true
+    centerMode: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
 });
 
 $('.hero__slider').slick({
@@ -16,3 +21,5 @@ $('.hero__slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
 });
+
+
