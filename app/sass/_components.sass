@@ -4,13 +4,15 @@
     margin: 0
 body
     color: $black
+    
 .content
     max-width: 1262px
     width: 100%
     margin: 0 auto
+    overflow: hidden
 .btn
     background: $orange
-    height: 45px
+    min-height: 45px
     width: 100%
     color: #ffffff
     display: flex
@@ -18,10 +20,24 @@ body
     justify-content: center
     border-radius: 4px
     font-size: 18px
+    position: relative
+    &::after
+        position: absolute
+        content: ''
+        width: 20px
+        height: 80px
+        top: -20px
+        left: -10px
+        animation: button 2.5s ease-in-out normal infinite
+        background: #eeeeee
+        opacity: 0.2
+        z-index: 5
+        transform: rotate3d(1, 1, 1, 45deg)
 .title
     font-size: 40px
     display: flex
     justify-content: center
+    text-align: center
 .description
     font-size: 20px
     display: flex
@@ -30,3 +46,18 @@ body
     margin-bottom: 50px
 a
     text-decoration: none
+
+
+@keyframes button
+    0%
+        animation-delay: 15s
+        left: -100px
+    100%
+        left: calc(100% + 20px)
+        animation-delay: 15s
+
+
+@media screen and ( max-width: 1262px ) and (min-width: 0)
+    .content
+        max-width: 96%
+        margin: 0 2%

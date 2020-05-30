@@ -5,12 +5,13 @@
     align-items: center
     justify-content: space-between
     overflow: hidden
+    width: 100%
     &__box
         max-width: 477px
         width: 100%
         margin-top: 25px
         &-title
-            font-size: 40px
+            font-size: 2.5em
             line-height: 51px
         &-description
             font-size: 20px
@@ -53,3 +54,46 @@
 .slick-slide
     border: none
     outline: none
+
+
+@media screen and ( max-width: 1260px ) and (min-width: 1056px)
+    .slider
+        max-width: 596px
+
+@media screen and ( max-width: 1055px ) and (min-width: 836px)
+    .slider
+        max-width: 396px
+@media screen and ( max-width: 835px ) and (min-width: 656px)
+    .discover
+        &__box
+            &-title
+                font-size: 2.2em
+    .slider
+        max-width: 296px
+@media screen and ( max-width: 655px ) and (min-width: 0)
+    .discover
+        flex-direction: column
+        &__box
+            max-width: 96%
+            &-title
+                font-size: 2em
+                max-width: 382px
+                width: 100%
+            &-description
+                font-size: 1em
+                max-width: 320px
+                width: 100%
+    .slider
+        margin-top: 25px
+        max-width: 100%
+
+@media screen and ( max-width: 320px ) and (min-width: 0)
+    .discover
+        &__box
+            &-title
+                font-size: 1.5em
+                max-width: 222px
+                width: 100%
+            &-description
+                font-size: 1em
+                max-width: 100%
