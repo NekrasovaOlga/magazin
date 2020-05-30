@@ -1,3 +1,3 @@
 # rend
 
-nekrasovaolga.github.io
+nekrasovaolga.github.io/app/index.html
