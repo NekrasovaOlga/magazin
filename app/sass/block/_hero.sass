@@ -3,12 +3,13 @@
     display: flex
     justify-content: space-between
     height: calc(100vh - 80px)
-    min-height: 500px
+    min-height: 600px
     &__box
         max-width: 542px
         width: 100%
         font-size: 20px
         margin-top: 5%
+        margin-left: 2%
     &__title
         font-size: 50px
     &__slider
@@ -23,7 +24,6 @@
                 width: 100%
     
     &__form
-        display: none
         position: absolute
         bottom: 5%
         max-width: 900px
@@ -55,7 +55,6 @@
             display: flex
             justify-content: space-between
             margin-top: 15px
-            flex-wrap: wrap
             align-items: flex-end
         &-label
             position: relative
@@ -125,3 +124,86 @@
                 border: none
                 width: 140px
                 margin-bottom: 25px
+@media screen and ( max-width: 1060px ) and (min-width: 0)
+    .hero
+        min-height: 500px
+        height: 100%
+@media screen and ( max-width: 1260px ) and (min-width: 1029px)
+    .hero
+        &__slider
+            max-width: 600px
+            height: 432px
+            &-item
+                max-width: 500px
+                height: 432px
+                img
+                    height: 432px
+        &__form
+            bottom: -48%
+
+@media screen and ( max-width: 1028px ) and (min-width: 603px)
+    .hero
+        &__slider
+            max-width: 500px
+            height: 332px
+            &-item
+                max-width: 356px
+                height: 332px
+        &__box
+            max-width: 316px
+            margin-top: 3%
+            &__title
+                font-size: 2em
+        &__form
+            bottom: -55%
+@media screen and ( max-width: 602px ) and (min-width: 0)
+    .hero
+        background: url(../img/slider-1.png)
+        background-repeat: no-repeat
+        box-sizing: cover
+        .slick-slider
+            display: none
+        &__box
+            text-align: center
+            display: flex
+            flex-direction: column
+            justify-content: center
+            color: #ffffff
+            padding: 100px 0
+            &__title
+                font-size: 1.8em
+            
+@media screen and ( max-width: 936px ) and (min-width: 0)
+    .hero
+        min-height: 350px
+        &__form
+            bottom: 0
+            position: relative
+            max-width: 100%
+            form
+                align-items: center
+                justify-content: center
+                flex-direction: column
+            &-inputs
+                max-width: 80%
+@media screen and ( max-width: 866px ) and (min-width: 783px)
+    .hero
+        &__form
+            &-inputs
+                max-width: 90%
+@media screen and ( max-width: 782px ) and (min-width: 0)
+    .hero
+        &__form
+            &-inputs
+                max-width: 100%
+@media screen and ( max-width: 712px ) and (min-width: 0)
+    .hero
+        &__form
+            margin-left: 0
+            overflow: hidden
+            &-inputs
+                flex-direction: column
+                width: 100%
+            &-label
+                input
+                    width: 100%
